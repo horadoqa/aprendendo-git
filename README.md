@@ -1,6 +1,8 @@
 # Guia de Git e GitHub
 
-Bem-vindo ao repositório "Git e GitHub"! Este repositório é um recurso abrangente para entender e usar Git e GitHub, ferramentas essenciais para controle de versão e colaboração em projetos de software.
+Bem-vindo ao repositório "Git e GitHub"! 
+
+Este repositório é um recurso abrangente para entender e usar Git e GitHub, ferramentas essenciais para controle de versão e colaboração em projetos de software.
 
 ## Índice
 
@@ -57,6 +59,8 @@ Para instalar o Git, siga estas etapas:
 
 ## Praticando
 
+Sites pra testes:
+
 - learngitbranching.js.org 
 - https://ohmygit.org/
 
@@ -68,7 +72,9 @@ Commits semânticos, ou convenções de commits semânticos, referem-se a um pad
 
 ## Contribuições
 
-Contribuições são sempre bem-vindas! Se você gostaria de ajudar a melhorar este projeto, siga as etapas abaixo:
+Contribuições são sempre bem-vindas! 
+
+Se você gostaria de ajudar a melhorar este projeto, siga as etapas abaixo:
 
 1. **Fork o repositório**:
    - Clique no botão **Fork** no canto superior direito da página do repositório no GitHub.
