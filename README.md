@@ -59,10 +59,11 @@ Para instalar o Git, siga estas etapas:
 
 ## Praticando
 
-Sites pra testes:
+Sites para praticar:
 
-- learngitbranching.js.org 
-- https://ohmygit.org/
+https://ohmygit.org
+
+https://learngitbranching.js.org
 
 ## Commits Semânticos
 
