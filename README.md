@@ -10,7 +10,7 @@ Este repositório é um recurso abrangente para entender e usar Git e GitHub, fe
 - [O que é GitHub?](#o-que-é-github)
 - [Instalação do Git](#instalação-do-git)
 - [Comandos Básicos do Git](#comandos-básicos-do-git)
-- [Usando o GitHub](#praticando)
+- [Usando o GitHub](#usando-o-github)
 - [Commits Semânticos](#commits-semânticos)
 - [Contribuições](#contribuições)
 
