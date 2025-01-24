@@ -63,11 +63,17 @@ Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e 
 - git merge: Mescla alterações de diferentes branches.
 - git rm: Utilizado para remover arquivos do seu repositório Git
 
-## Praticando
+## Usando o Github
 
 No [github](https://github.com/horadoqa), vamos criar um repositório chamado `exercícios-git` e dentro dele um arquivo chamdo `index.html`, depois de criados vamos seguir todo o processo para enviar este arquivo para o github.
 
 [Saiba mais...](/docs/praticando.md)
+
+## Commits Semânticos
+
+Commits semânticos, ou convenções de commits semânticos, referem-se a um padrão de nomenclatura para mensagens de commit que visa facilitar a compreensão do histórico de um projeto e melhorar a comunicação entre desenvolvedores. Esse padrão, conhecido como Conventional Commits, utiliza uma estrutura específica que ajuda a descrever claramente as mudanças realizadas no código.
+
+[Saiba mais...](/docs/commits-semanticos.md)
 
 ## Sites para praticar
 

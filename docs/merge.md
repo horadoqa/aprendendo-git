@@ -68,3 +68,5 @@ Você precisa então editar os arquivos, escolher quais alterações manter, e d
 - **Merge** é o processo de integrar alterações de uma branch em outra.
 - É usado para combinar alterações feitas em diferentes branches, sendo fundamental em projetos colaborativos.
 - Pode ocorrer automaticamente ou exigir resolução de conflitos quando as alterações se sobrepõem.
+
+[Próximo passo... Atualizando o repositório local com o git pull](/docs/pull.md)

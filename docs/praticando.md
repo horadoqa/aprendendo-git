@@ -58,12 +58,6 @@ Exemplo:
 git commit -m "Criando o arquivo index.html"
 ```
 
-#### Commits Semânticos
-
-Commits semânticos, ou convenções de commits semânticos, referem-se a um padrão de nomenclatura para mensagens de commit que visa facilitar a compreensão do histórico de um projeto e melhorar a comunicação entre desenvolvedores. Esse padrão, conhecido como Conventional Commits, utiliza uma estrutura específica que ajuda a descrever claramente as mudanças realizadas no código.
-
-[Saiba mais...](/docs/commits-semanticos.md)
-
 ### 5. **Verificando o status do repositório**
 Você pode verificar o status do repositório para ver quais arquivos foram modificados, quais estão preparados para o commit, e quais ainda precisam ser adicionados.
 

@@ -17,17 +17,28 @@ git branch -a
 ```
 
 ### 2. **Criando e mudando de branch**
-O Git permite criar ramificações (branches) para trabalhar em novas funcionalidades ou corrigir bugs sem afetar o código principal. O comando para criar uma nova branch é `git branch`, e para mudar de branch, você usa `git checkout`.
+O Git permite criar ramificações (branches) para trabalhar em novas funcionalidades ou corrigir bugs sem afetar o código principal. O comando para criar uma nova branch é `git branch`
 
 Exemplo:
 ```bash
 git branch index
+```
+
+Para mudar de branch, você usa `git checkout`.
+
+Exemplo:
+```bash
 git checkout index
 ```
 
 Ou, você pode combinar os dois passos em um único comando:
 ```bash
 git checkout -b index
+```
+
+Você também pode apagar uma branch
+```bash
+git checkout -d index
 ```
 
 [Próximo passo... Criar as chaves pública e privada](/docs/keys.md)
