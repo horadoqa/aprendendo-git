@@ -18,11 +18,15 @@ Este repositório é um recurso abrangente para entender e usar Git e GitHub, fe
 
 Git é um sistema de controle de versão distribuído que permite que desenvolvedores gerenciem e acompanhem alterações em projetos de software. Ele ajuda a manter um histórico de versões, permite a colaboração em equipe e facilita a reversão de alterações.
 
+O Git foi criado por Linus Torvalds, o mesmo criador do Linux. Ele desenvolveu o Git em 2005 para gerenciar o código fonte do kernel do Linux de forma mais eficiente. A motivação principal para o desenvolvimento do Git foi a insatisfação com os sistemas de controle de versão existentes na época, especialmente após problemas com o sistema de controle de versão usado pelo projeto do Linux.
+
 [Saiba mais...](git.md)
 
 ## O que é GitHub?
 
 GitHub é uma plataforma de hospedagem de código-fonte que utiliza Git. Ela permite que desenvolvedores colaborem em projetos, façam revisões de código e automatizem fluxos de trabalho de desenvolvimento através de funcionalidades como GitHub Actions.
+
+O GitHub pertence à Microsoft. A Microsoft adquiriu o GitHub em 2018, por cerca de 7,5 bilhões de dólares em ações da empresa. Embora o GitHub tenha se tornado parte da Microsoft, ele continua funcionando como uma plataforma independente, com foco em desenvolvimento de software colaborativo e hospedagem de código-fonte usando Git.
 
 [Saiba mais...](github.md)
 
@@ -30,7 +34,9 @@ GitHub é uma plataforma de hospedagem de código-fonte que utiliza Git. Ela per
 
 Para instalar o Git, siga estas etapas:
 
-1. **Windows**: Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e siga as instruções.
+1. **Windows**: O Git Bash faz parte do pacote Git for Windows.
+
+Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e siga as instruções.
 
 2. **macOS**: Você pode instalar usando o Homebrew:
    
