@@ -6,7 +6,9 @@ Aqui estão alguns conceitos e exemplos de como usar o Git:
 Dentro do site: https://github.com/horadoqa, acessamos a aba `Repositories` e depois clicamos em `New`.
 
 Será solicitado:
+
 O `Repository name*`, nome do repositório, para este exercício, usaremos:
+    
     exercicios-git
 
 O `Description (optional)`, um descrição sobre o repositório.
