@@ -65,7 +65,7 @@ Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e 
 
 ## Praticando
 
-No [github](https://github.com/horadoqa), vamos criar um repositório chamado exercícios-git e dentro dele um index.html, depois de criados vamos seguir todo o processo para enviar este arquivo para o github.
+No [github](https://github.com/horadoqa), vamos criar um repositório chamado `exercícios-git` e dentro dele um arquivo chamdo `index.html`, depois de criados vamos seguir todo o processo para enviar este arquivo para o github.
 
 [Saiba mais...](/docs/praticando.md)
 
