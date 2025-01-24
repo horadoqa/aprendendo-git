@@ -32,24 +32,10 @@ Exemplo:
 ```bash
 git clone <url do repositório>
 ```
-Sendo que...
-
-HTTPS: Precisa passar as credencias: login e password para realizar o `push`.
-
-```bash
-git clone https://github.com/horadoqa/exercicios-git.git
-```
-
-SSH: Precisa configurar as chaves pública e primada para realizar o `push`.
-
-```bash
-git clone git@github.com:horadoqa/exercicios-git.git
-```
 
 Em nosso terminal, pode ser direto via CLI ou no Visual Studio Code.
-
 ```bash
-git clone https://github.com/horadoqa/exercicios-git.git
+git clone git@github.com:horadoqa/exercicios-git.git
 ```
 
 ### 3. **Adicionando arquivos ao repositório**
