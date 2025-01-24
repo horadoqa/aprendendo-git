@@ -71,6 +71,10 @@ Commits semânticos, ou convenções de commits semânticos, referem-se a um pad
 
 [Saiba mais...](commits-semanticos.md)
 
+## Praticando
+
+
+
 ## Contribuições
 
 Contribuições são sempre bem-vindas! 
