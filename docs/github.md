@@ -1,5 +1,7 @@
 # GITHUB
 
+site: https://github.com/
+
 O GitHub é uma plataforma de hospedagem de código-fonte que utiliza o sistema de controle de versão Git. É amplamente utilizada por desenvolvedores para gerenciar projetos de software e colaborar em equipe. Aqui estão algumas características e funcionalidades principais do GitHub:
 
 ## Características do GitHub

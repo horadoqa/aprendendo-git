@@ -57,4 +57,4 @@ Se as alterações forem aprovadas, o PR pode ser **mesclado** (merge) com a bra
 
 O processo pode variar um pouco dependendo da plataforma (GitLab, Bitbucket, etc.), mas a ideia principal do Pull Request é sempre a mesma: sugerir alterações e permitir que outros revisem antes da fusão com a branch principal.
 
-[Próximo passo... Mergeando as alterações](merge.md)
+[Próximo passo... Mergeando as alterações](/docs/merge.md)

@@ -63,4 +63,4 @@ git pull origin main
 
 Esses são apenas alguns dos comandos básicos do Git, mas ele oferece muito mais funcionalidades, como resolução de conflitos, rebase, stashing, etc.
 
-[Próximo passo... Criar um Pull Request (PR)](pull-request.md)
+[Próximo passo... Criar um Pull Request (PR)](/docs/pull-request.md)

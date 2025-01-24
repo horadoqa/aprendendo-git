@@ -68,5 +68,3 @@ Você precisa então editar os arquivos, escolher quais alterações manter, e d
 - **Merge** é o processo de integrar alterações de uma branch em outra.
 - É usado para combinar alterações feitas em diferentes branches, sendo fundamental em projetos colaborativos.
 - Pode ocorrer automaticamente ou exigir resolução de conflitos quando as alterações se sobrepõem.
-
-Se precisar de mais detalhes sobre como realizar merges ou lidar com conflitos, só me avisar!
