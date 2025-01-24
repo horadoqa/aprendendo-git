@@ -34,7 +34,7 @@ O GitHub pertence à Microsoft. A Microsoft adquiriu o GitHub em 2018, por cerca
 
 Para instalar o Git, siga estas etapas:
 
-1. **Windows**: O Git Bash faz parte do pacote Git for Windows.
+1. **Windows**: O `Git Bash` faz parte do pacote Git for Windows.
 
 Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e siga as instruções.
 
@@ -47,8 +47,13 @@ Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e 
 3. **Linux**: Use o gerenciador de pacotes da sua distribuição. Por exemplo, no Ubuntu
 
     ```bash
-    sudo apt-get install git
+    sudo apt install git
     ```
+Pra verificar a versão instalada:
+   
+   ```bash
+   git --version
+   ```
 
 ## Comandos básicos do git
 
@@ -80,7 +85,6 @@ Commits semânticos, ou convenções de commits semânticos, referem-se a um pad
 https://ohmygit.org
 
 https://learngitbranching.js.org
-
 
 ## Contribuições
 

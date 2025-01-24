@@ -3,6 +3,7 @@
 Aqui estão alguns conceitos e exemplos de como usar o Git:
 
 ### 1. **Criando um repositório**
+
 Dentro do site: https://github.com/horadoqa, acessamos a aba `Repositories` e depois clicamos em `New`.
 
 Será solicitado:
@@ -16,7 +17,8 @@ O `Description (optional)`, um descrição sobre o repositório.
 
 Selecionar se o repositório vai ser `Public` ou `Private`.
 
-Selevionar `Add a README file` o repositório vai ser inicializado com o arquivo README.md, arquivo que tem as observações do projeto
+Selecionar `Add a README file`, o repositório vai ser inicializado com o arquivo README.md, arquivo que tem as observações do projeto
+    
     # Página WEB, com html, css e javascript
 
 Após esta configuração, clicar em: `Criar repositório`.
