@@ -1,6 +1,6 @@
 # Guia de Git e GitHub
 
-Bem-vindo ao repositório "Git e GitHub"! 
+Bem-vindo ao repositório "Aprendendo Git e GitHub"! 
 
 Este repositório é um recurso abrangente para entender e usar Git e GitHub, ferramentas essenciais para controle de versão e colaboração em projetos de software.
 
@@ -59,20 +59,15 @@ Para instalar o Git, siga estas etapas:
 
 ## Praticando
 
-Sites para praticar:
+No github, vamos criar um repositório chamado exercícios-git e dentro dele um index.html, depois de criados vamos seguir todo o processo para enviar este arquivo para o github.
+
+[Saiba mais...](praticando.md)
+
+## Sites para praticar
 
 https://ohmygit.org
 
 https://learngitbranching.js.org
-
-## Commits Semânticos
-
-Commits semânticos, ou convenções de commits semânticos, referem-se a um padrão de nomenclatura para mensagens de commit que visa facilitar a compreensão do histórico de um projeto e melhorar a comunicação entre desenvolvedores. Esse padrão, conhecido como Conventional Commits, utiliza uma estrutura específica que ajuda a descrever claramente as mudanças realizadas no código.
-
-[Saiba mais...](commits-semanticos.md)
-
-## Praticando
-
 
 
 ## Contribuições

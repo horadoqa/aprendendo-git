@@ -14,15 +14,17 @@ A estrutura básica de uma mensagem de commit semântica é a seguinte:
 
 ## Componentes
 
-1. Tipo: Define a natureza da alteração. Exemplos comuns incluem:
+1. Tipo: Define a natureza da alteração. 
 
-    - feat: Uma nova funcionalidade.
-    - fix: Correção de um bug.
-    - docs: Mudanças na documentação.
-    - style: Alterações que não afetam a lógica do código (espaçamento, formatação).
-    - refactor: Alterações no código que não adicionam funcionalidades nem corrigem bugs.
-    - test: Adição ou modificação de testes.
-    - chore: Mudanças em tarefas de manutenção (ex.: configurações, ferramentas).
+Exemplos comuns incluem:
+
+- feat: Uma nova funcionalidade.
+- fix: Correção de um bug.
+- docs: Mudanças na documentação.
+- style: Alterações que não afetam a lógica do código (espaçamento, formatação).
+- refactor: Alterações no código que não adicionam funcionalidades nem corrigem bugs.
+- test: Adição ou modificação de testes.
+- chore: Mudanças em tarefas de manutenção (ex.: configurações, ferramentas).
 
 2. Escopo: Opcional, mas pode ser usado para indicar a parte do código afetada pela mudança (ex.: api, ui, etc.).
 
