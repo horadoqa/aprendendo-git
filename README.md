@@ -16,7 +16,7 @@ Este repositório é um recurso abrangente para entender e usar Git e GitHub, fe
 
 ## O que é Git?
 
-Git é um sistema de controle de versão distribuído que permite que desenvolvedores gerenciem e acompanhem alterações em projetos de software. Ele ajuda a manter um histórico de versões, permite a colaboração em equipe e facilita a reversão de alterações.
+[Git](https://git-scm.com/) é um sistema de controle de versão distribuído que permite que desenvolvedores gerenciem e acompanhem alterações em projetos de software. Ele ajuda a manter um histórico de versões, permite a colaboração em equipe e facilita a reversão de alterações.
 
 O Git foi criado por Linus Torvalds, o mesmo criador do Linux. Ele desenvolveu o Git em 2005 para gerenciar o código fonte do kernel do Linux de forma mais eficiente. A motivação principal para o desenvolvimento do Git foi a insatisfação com os sistemas de controle de versão existentes na época, especialmente após problemas com o sistema de controle de versão usado pelo projeto do Linux.
 
@@ -49,7 +49,7 @@ Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e 
     ```bash
     sudo apt install git
     ```
-Pra verificar a versão instalada:
+Para verificar a versão instalada:
    
    ```bash
    git --version
@@ -72,13 +72,13 @@ Pra verificar a versão instalada:
 
 No [github](https://github.com/horadoqa), vamos criar um repositório chamado `exercícios-git` e dentro dele um arquivo chamdo `index.html`, depois de criados vamos seguir todo o processo para enviar este arquivo para o github.
 
-[Saiba mais...](/docs/praticando.md)
+[Saiba mais...](./docs/praticando.md)
 
 ## Commits Semânticos
 
 Commits semânticos, ou convenções de commits semânticos, referem-se a um padrão de nomenclatura para mensagens de commit que visa facilitar a compreensão do histórico de um projeto e melhorar a comunicação entre desenvolvedores. Esse padrão, conhecido como Conventional Commits, utiliza uma estrutura específica que ajuda a descrever claramente as mudanças realizadas no código.
 
-[Saiba mais...](/docs/commits-semanticos.md)
+[Saiba mais...](./docs/commits-semanticos.md)
 
 ## Sites para praticar
 

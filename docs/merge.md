@@ -15,7 +15,7 @@ O **merge** no Git é o processo de combinar duas branches (ou mais) em uma úni
 Suponha que você tenha duas branches:
 
 - `main`: a branch principal com o código estável.
-- `nova-funcionalidade`: uma branch onde você está trabalhando em uma nova funcionalidade.
+- `index`: uma branch onde você está trabalhando em uma nova funcionalidade.
 
 O fluxo de trabalho seria:
 
@@ -24,12 +24,12 @@ O fluxo de trabalho seria:
    git checkout main
    ```
 
-2. Agora, você faz o merge da branch `nova-funcionalidade` na branch `main`:
+2. Agora, você faz o merge da branch `index` na branch `main`:
    ```bash
-   git merge nova-funcionalidade
+   git merge index
    ```
 
-Neste ponto, o Git tentará combinar as mudanças da `nova-funcionalidade` com a `main`. Se não houver conflitos (ou seja, se as alterações não afetarem as mesmas linhas de código), o merge será feito automaticamente, criando um novo commit na branch `main` que contém as mudanças combinadas.
+Neste ponto, o Git tentará combinar as mudanças da `index` com a `main`. Se não houver conflitos (ou seja, se as alterações não afetarem as mesmas linhas de código), o merge será feito automaticamente, criando um novo commit na branch `main` que contém as mudanças combinadas.
 
 ### Quando ocorre um **conflito de merge**?
 
@@ -69,4 +69,6 @@ Você precisa então editar os arquivos, escolher quais alterações manter, e d
 - É usado para combinar alterações feitas em diferentes branches, sendo fundamental em projetos colaborativos.
 - Pode ocorrer automaticamente ou exigir resolução de conflitos quando as alterações se sobrepõem.
 
-[Próximo passo... Atualizando o repositório local com o git pull](/docs/pull.md)
+---
+
+[Próximo passo... Atualizando o repositório local com o git pull](./pull.md)

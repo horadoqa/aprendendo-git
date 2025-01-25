@@ -52,5 +52,6 @@ Para criar as chaves públicas e privadas para o GitHub, você pode usar o **ssh
 
 E pronto! Agora você tem uma chave SSH configurada para usar com o GitHub. Você pode usar o Git sem precisar inserir sua senha toda vez que fizer operações como `git push` ou `git pull`.
 
+---
 
-[Próximo passo... Enviar as modificações para o github com o git push](/docs/push.md)
+[Próximo passo... Enviar as modificações para o github com o git push](./push.md)
