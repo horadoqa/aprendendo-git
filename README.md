@@ -1,4 +1,4 @@
-# Guia de Git e GitHub
+# Guia de Git e GitHub/Gitlab
 
 Bem-vindo ao repositório "Aprendendo Git e GitHub"! 
 
@@ -30,6 +30,14 @@ O GitHub pertence à Microsoft. A Microsoft adquiriu o GitHub em 2018, por cerca
 
 [Saiba mais...](/docs/github.md)
 
+## O que é Gitlab?
+
+[GitLab](https://gitlab.com/) é uma plataforma de hospedagem e gerenciamento de código-fonte que utiliza Git. Ela permite que desenvolvedores e equipes colaborem em projetos, façam revisões de código e automatizem fluxos de desenvolvimento por meio de recursos como **Merge Requests** e **GitLab CI/CD**.
+
+O GitLab é desenvolvido pela **GitLab Inc.** e oferece uma plataforma integrada para o ciclo de vida do desenvolvimento de software, incluindo hospedagem de código, controle de versão, revisão de código, gerenciamento de projetos e automação de pipelines de CI/CD.
+
+[Saiba mais...](/docs/gitlab.md)
+
 ## Instalação do Git
 
 Para instalar o Git, siga estas etapas:
@@ -49,24 +57,32 @@ Baixe o instalador do [site oficial do Git](https://git-scm.com/download/win) e 
     ```bash
     sudo apt install git
     ```
-Para verificar a versão instalada:
+4. Para verificar a versão instalada:
    
    ```bash
    git --version
    ```
 
+5. Para atualizar a versão do git
+
+   ```bash
+   sudo apt upgrade git
+   ```
+
 ## Comandos básicos do git
 
-- git init: Cria um novo repositório Git.
-- git clone: Faz uma cópia de um repositório remoto.
-- git add: Adiciona arquivos ao índice para preparação para commit.
-- git commit: Registra as mudanças no repositório local.
-- git push: Envia as alterações locais para um repositório remoto.
-- git pull: Atualiza o repositório local com alterações do repositório remoto.
-- git checkout: Cria ou deleta branches.
-- git branch: Gerencia branches (criação, listagem, exclusão).
-- git merge: Mescla alterações de diferentes branches.
-- git rm: Utilizado para remover arquivos do seu repositório Git
+- [git init](./docs/init.md): Cria um novo repositório Git.
+- [git clone](./docs/clene.md): Faz uma cópia de um repositório remoto.
+- [git status](./docs/status.md): Verifica o Status do projeto. O que foi modificado.
+- [git add](./docs/add.md): Adiciona arquivos ao índice para preparação para commit.
+- [git commit](./docs/commit.md): Registra as mudanças no repositório local.
+- [git push](./docs/push.md): Envia as alterações locais para um repositório remoto.
+- [git pull](./docs/pull.md): Atualiza o repositório local com alterações do repositório remoto.
+- [git checkout](./docs/checkout.md): Cria ou deleta branches.
+- [git branch](./docs/branch.md): Gerencia branches (criação, listagem, exclusão).
+- [git switch](./docs/switch.md):Utilizado para Criar/Mudar de branch
+- [git merge](./docs/merge.md): Mescla alterações de diferentes branches.
+- [git rm](./docs/rm.md): Utilizado para remover arquivos do seu repositório Git
 
 ## Usando o Github
 
@@ -78,7 +94,7 @@ No [github](https://github.com/horadoqa), vamos criar um repositório chamado `e
 
 Commits semânticos, ou convenções de commits semânticos, referem-se a um padrão de nomenclatura para mensagens de commit que visa facilitar a compreensão do histórico de um projeto e melhorar a comunicação entre desenvolvedores. Esse padrão, conhecido como Conventional Commits, utiliza uma estrutura específica que ajuda a descrever claramente as mudanças realizadas no código.
 
-[Saiba mais...](./docs/commits-semanticos.md)
+[Saiba mais...](./docs/commits.md)
 
 ## Sites para praticar
 

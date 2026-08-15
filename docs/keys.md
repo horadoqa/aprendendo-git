@@ -1,57 +1,262 @@
-# Criando as chaves (Keys)
+Sim. **A mesma chave SSH pode ser cadastrada tanto no GitHub quanto no GitLab**. Você não precisa necessariamente criar uma chave diferente para cada plataforma.
 
-Para criar as chaves públicas e privadas para o GitHub, você pode usar o **ssh-keygen** no terminal do seu computador. Aqui está um passo a passo para gerar as chaves:
+A ideia é:
 
-### 1. **Abrir o terminal**:
-   - **No Linux ou macOS**, abra o terminal.
-   - **No Windows**, você pode usar o Git Bash ou o terminal do PowerShell.
+```mermaid
+flowchart TD
+    A["Seu computador"] --> B["Chave privada"]
 
-### 2. **Gerar a chave SSH**:
-   No terminal, execute o seguinte comando:
-   ```bash
-   ssh-keygen -t rsa -b 4096 -C "seu_email@example.com"
-   ```
-   - O `-t rsa` especifica o tipo de chave (RSA).
-   - O `-b 4096` define o tamanho da chave (4096 bits é recomendado para segurança).
-   - O `-C "seu_email@example.com"` é um comentário que ajuda a identificar a chave, geralmente seu e-mail do GitHub.
+    B --> C["GitHub"]
+    B --> D["GitLab"]
 
-### 3. **Escolher o local para salvar a chave**:
-   Após executar o comando, ele perguntará onde salvar a chave gerada. Por padrão, a chave será salva no diretório `~/.ssh/id_rsa`. Caso queira usar o local padrão, basta pressionar **Enter**.
+    C --> E["Chave pública"]
+    D --> F["Chave pública"]
 
-### 4. **Definir uma senha (opcional)**:
-   O sistema pedirá para você criar uma senha para proteger sua chave privada. Essa etapa é opcional, mas recomendada para segurança adicional.
+    E --> G["Autenticação"]
+    F --> G
+```
 
-### 5. **Adicionar a chave pública ao GitHub**:
-   Agora você precisa adicionar a chave pública gerada no GitHub:
+O GitHub recomenda atualmente **Ed25519** para novas chaves, e o GitLab também indica Ed25519 como opção preferencial. ([GitHub Docs][1])
 
-   - Exiba a chave pública com o comando:
-     ```bash
-     cat ~/.ssh/id_rsa.pub
-     ```
-   - Copie todo o conteúdo da chave que aparecerá no terminal.
+# 1. Verificar se já existe uma chave
 
-   - Vá até o GitHub e faça login.
-   - No canto superior direito, clique na sua foto de perfil e depois em **Settings**.
-   - No menu à esquerda, clique em **SSH and GPG keys**.
-   - Clique em **New SSH key**.
-   - No campo **Title**, coloque um nome para identificar essa chave, por exemplo, "Meu laptop".
-   - No campo **Key**, cole a chave pública que você copiou.
-   - Clique em **Add SSH key**.
+Antes de criar uma nova, verifique:
 
-### 6. **Testar a conexão SSH**:
-   Para garantir que tudo está funcionando, você pode testar a conexão SSH com o GitHub:
+```bash
+ls -la ~/.ssh
+```
 
-   ```bash
-   ssh -T git@github.com
-   ```
+Procure por arquivos como:
 
-   Se tudo estiver configurado corretamente, você verá uma mensagem como:
-   ```
-   Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
-   ```
+```text
+id_ed25519
+id_ed25519.pub
+```
 
-E pronto! Agora você tem uma chave SSH configurada para usar com o GitHub. Você pode usar o Git sem precisar inserir sua senha toda vez que fizer operações como `git push` ou `git pull`.
+A diferença é:
+
+```text
+id_ed25519
+    ↑
+chave privada — NÃO compartilhe
+
+id_ed25519.pub
+    ↑
+chave pública — pode ser cadastrada no GitHub/GitLab
+```
+
+A chave privada deve permanecer somente no seu computador. ([GitLab Docs][2])
 
 ---
 
-[Próximo passo... Enviar as modificações para o github com o git push](./push.md)
+# 2. Criar uma chave SSH
+
+Se você ainda não tiver uma:
+
+```bash
+ssh-keygen -t ed25519 -C "seu_email@example.com"
+```
+
+Quando aparecer:
+
+```text
+Enter file in which to save the key:
+```
+
+pode pressionar `Enter` para utilizar o local padrão:
+
+```text
+~/.ssh/id_ed25519
+```
+
+Depois será solicitada uma **passphrase**.
+
+Você pode definir uma senha para proteger a chave privada. O GitHub e o GitLab recomendam esse tipo de proteção adicional. ([GitHub Docs][1])
+
+---
+
+# 3. Adicionar a chave ao SSH Agent
+
+No Linux/macOS:
+
+```bash
+eval "$(ssh-agent -s)"
+```
+
+Depois:
+
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
+O `ssh-agent` ajuda a gerenciar a chave privada e, quando aplicável, evita que você precise informar a passphrase repetidamente. ([GitHub Docs][1])
+
+---
+
+# 4. Copiar a chave pública
+
+Execute:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Você verá algo semelhante a:
+
+```text
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... seu_email@example.com
+```
+
+Copie **a linha inteira**.
+
+⚠️ É o arquivo:
+
+```text
+id_ed25519.pub
+```
+
+que será cadastrado.
+
+**Nunca copie:**
+
+```text
+id_ed25519
+```
+
+---
+
+# 5. Adicionar ao GitHub
+
+No GitHub:
+
+```text
+Settings
+   ↓
+SSH and GPG keys
+   ↓
+New SSH key
+```
+
+Informe um nome, por exemplo:
+
+```text
+Notebook pessoal
+```
+
+Cole o conteúdo de:
+
+```text
+~/.ssh/id_ed25519.pub
+```
+
+e clique em **Add SSH key**. ([GitHub Docs][3])
+
+---
+
+# 6. Testar o GitHub
+
+Execute:
+
+```bash
+ssh -T git@github.com
+```
+
+Se estiver tudo correto, o GitHub deverá informar que você foi autenticado. ([GitHub Docs][3])
+
+---
+
+# 7. Adicionar a mesma chave ao GitLab
+
+No GitLab:
+
+```text
+Edit profile
+   ↓
+Access
+   ↓
+SSH keys
+   ↓
+Add new key
+```
+
+Cole a mesma chave pública:
+
+```text
+~/.ssh/id_ed25519.pub
+```
+
+Informe um título, por exemplo:
+
+```text
+Notebook pessoal
+```
+
+e adicione a chave. ([GitLab Docs][2])
+
+---
+
+# 8. Testar o GitLab
+
+Execute:
+
+```bash
+ssh -T git@gitlab.com
+```
+
+Se estiver configurado corretamente, o GitLab deverá retornar uma mensagem de boas-vindas. ([GitLab Docs][2])
+
+---
+
+# 9. Agora você pode usar os dois
+
+### GitHub
+
+```bash
+git clone git@github.com:horadoqa/exercicios-git.git
+```
+
+### GitLab
+
+```bash
+git clone git@gitlab.com:usuario/projeto.git
+```
+
+A autenticação SSH será feita usando a chave que está no seu computador.
+
+```mermaid
+flowchart TD
+    A["Seu computador"] --> B["Chave privada"]
+    B --> C["SSH"]
+
+    C --> D["GitHub"]
+    C --> E["GitLab"]
+
+    D --> F["Verifica chave pública"]
+    E --> G["Verifica chave pública"]
+
+    F --> H["Autenticado"]
+    G --> H
+```
+
+## Uma observação importante
+
+Para **um único computador e uma única conta**, usar a mesma chave no GitHub e no GitLab é perfeitamente possível.
+
+Porém, em cenários mais avançados, como:
+
+```text
+Computador pessoal → GitHub pessoal
+Computador pessoal → GitHub empresa
+Computador pessoal → GitLab empresa
+```
+
+pode ser interessante criar **chaves diferentes** e configurar o `~/.ssh/config` para determinar qual chave usar em cada serviço.
+
+Para o seu exercício de Git, eu recomendo começar com **uma chave Ed25519** e cadastrá-la tanto no GitHub quanto no GitLab. ([GitHub Docs][1])
+
+[Documentação oficial do GitHub — SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?utm_source=chatgpt.com)
+[Documentação oficial do GitLab — SSH](https://docs.gitlab.com/user/ssh/?utm_source=chatgpt.com)
+
+[1]: https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?utm_source=chatgpt.com "Gerando uma nova chave SSH e adicionando-a ao agente SSH - Documentos do GitHub"
+[2]: https://docs.gitlab.com/user/ssh/?utm_source=chatgpt.com "Use SSH keys with GitLab | GitLab Docs"
+[3]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webui&utm_source=chatgpt.com "Adding a new SSH key to your GitHub account - GitHub Docs"

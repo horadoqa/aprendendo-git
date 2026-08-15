@@ -1,25 +1,91 @@
-# Pull Request (PR)
+# `Pull Request`
 
-Como trabalhamos com muitos colaborados e alterações são constantes nos códigos, precisamos analisar essas alterações e aprovar ou não a atualização do `main`, para isso, precisaremos criar o famoso `Pull Request (PR)`.
+Um **Pull Request (PR)** é uma solicitação para **integrar as alterações de uma branch em outra**, normalmente de uma branch de funcionalidade para a `main`.
 
-Para criar um **Pull Request (PR)**, o processo geralmente envolve algumas etapas no GitHub (ou em plataformas similares como GitLab, Bitbucket, etc.), após você ter feito mudanças em um repositório. O Pull Request serve para pedir a revisão de suas alterações antes de mesclá-las com a branch principal do projeto a `main` . 
+Por exemplo:
 
-### 1. **Abra o GitHub e crie o Pull Request**
-Agora que você enviou suas alterações para o repositório remoto, siga esses passos:
+```mermaid
+flowchart TD
+    A["feature/login"] --> B["Pull Request"]
+    B --> C["main"]
+```
 
-1. **Vá para o repositório no GitHub** onde você fez o `push` da sua branch.
-   
-2. Você verá um aviso logo acima da lista de arquivos que diz algo como `index had recent pushes on 24 de jan.`. Clique no botão **"Compare & pull request"**.
+Na prática, você trabalha em uma branch:
 
-3. Na página seguinte, você verá uma comparação entre a sua branch e a branch principal (geralmente `main`). Aqui, você pode adicionar um título e uma descrição detalhada sobre o que foi feito na sua branch e o motivo das alterações.
+```bash
+git switch -c feature/login
+```
 
-4. Se tudo estiver correto, clique em **"Create Pull Request"**.
+Faz suas alterações:
 
-### 4. **Revisão do Pull Request**
-Depois de criar o PR, ele ficará disponível para revisão. O time do projeto (ou você mesmo, se for um repositório pessoal) pode revisar suas alterações, discutir melhorias ou correções, e até mesmo sugerir ajustes.
+```bash
+git add .
+git commit -m "Adiciona tela de login"
+```
 
-- Se precisar fazer alterações, basta fazer commit na sua branch local e fazer um novo `push`. As mudanças serão automaticamente refletidas no PR.
+Envia a branch para o GitHub:
 
----
+```bash
+git push -u origin feature/login
+```
 
-[Próximo passo... Mesclado as alterações](./merge.md)
+Depois, no GitHub, você cria um **Pull Request** solicitando:
+
+> "Quero integrar a `feature/login` na `main`."
+
+```mermaid
+flowchart TD
+    A["feature/login"] --> B["git push"]
+    B --> C["GitHub"]
+    C --> D["Pull Request"]
+    D --> E["Revisão"]
+    E --> F["Aprovação"]
+    F --> G["Merge na main"]
+```
+
+## O que acontece durante um PR?
+
+O Pull Request permite que outras pessoas:
+
+* revisem o código;
+* façam comentários;
+* identifiquem problemas;
+* solicitem alterações;
+* executem testes;
+* aprovem ou rejeitem a integração.
+
+Se forem solicitadas alterações, você continua trabalhando na mesma branch:
+
+```bash
+git add .
+git commit -m "Corrige validação do login"
+git push
+```
+
+O novo commit aparecerá automaticamente no Pull Request.
+
+### PR não é `merge`
+
+Essa diferença é importante:
+
+**Pull Request:**
+
+> "Gostaria de integrar estas alterações. Podem revisar?"
+
+**Merge:**
+
+> "As alterações foram integradas à branch de destino."
+
+```mermaid
+flowchart LR
+    A["feature/login"] --> B["Pull Request"]
+    B --> C["Revisão"]
+    C --> D["Aprovação"]
+    D --> E["Merge"]
+    E --> F["main"]
+```
+
+Portanto, uma forma simples de memorizar é:
+
+> **Pull Request = pedido para integrar alterações.**
+> **Merge = integração das alterações.**

@@ -1,4 +1,8 @@
-# Commits semânticos
+# `git commit ` 
+
+Utilizado para informar o que foi realizado no projeto
+
+## Commits semânticos
 
 Commits semânticos, ou convenções de commits semânticos, referem-se a um padrão de nomenclatura para mensagens de commit que visa facilitar a compreensão do histórico de um projeto e melhorar a comunicação entre desenvolvedores. Esse padrão, conhecido como Conventional Commits, utiliza uma estrutura específica que ajuda a descrever claramente as mudanças realizadas no código.
 
@@ -18,13 +22,13 @@ A estrutura básica de uma mensagem de commit semântica é a seguinte:
 
 Exemplos comuns incluem:
 
-- feat: Uma nova funcionalidade.
-- fix: Correção de um bug.
-- docs: Mudanças na documentação.
-- style: Alterações que não afetam a lógica do código (espaçamento, formatação).
-- refactor: Alterações no código que não adicionam funcionalidades nem corrigem bugs.
-- test: Adição ou modificação de testes.
-- chore: Mudanças em tarefas de manutenção (ex.: configurações, ferramentas).
+- `feat`: Uma nova funcionalidade.
+- `fix`: Correção de um bug.
+- `docs`: Mudanças na documentação.
+- `style`: Alterações que não afetam a lógica do código (espaçamento, formatação).
+- `refactor`: Alterações no código que não adicionam funcionalidades nem corrigem bugs.
+- `test`: Adição ou modificação de testes.
+- `chore`: Mudanças em tarefas de manutenção (ex.: configurações, ferramentas).
 
 2. Escopo: Opcional, mas pode ser usado para indicar a parte do código afetada pela mudança (ex.: api, ui, etc.).
 
