@@ -1,4 +1,4 @@
-# GitLab
+# `gitlab`
 
 site: https://about.gitlab.com/pt-br/
 
@@ -29,23 +29,20 @@ Ele utiliza o **Git** para controle de versão e oferece recursos como:
 
 Uma diferença importante na terminologia é:
 
-```text
-GitHub
-feature/login
-      ↓
-Pull Request
-      ↓
-main
+No GitHub:
+
+```mermaid
+flowchart TD
+    A["feature/login"] --> B["Pull Request"]
+    B --> C["main"]
 ```
 
 No GitLab:
 
-```text
-feature/login
-      ↓
-Merge Request
-      ↓
-main
+```mermaid
+flowchart TD
+    A["feature/login"] --> B["Merge Request"]
+    B --> C["main"]
 ```
 
 Apesar do nome diferente, **a ideia é muito parecida**: solicitar revisão e integração das alterações de uma branch em outra.

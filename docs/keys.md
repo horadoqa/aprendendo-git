@@ -1,4 +1,8 @@
-Sim. **A mesma chave SSH pode ser cadastrada tanto no GitHub quanto no GitLab**. Você não precisa necessariamente criar uma chave diferente para cada plataforma.
+# `keys`
+
+Criadas para garantia a segurança de comunicação entre o repositório local e o remoto.
+
+OBS.: **A mesma chave SSH pode ser cadastrada tanto no GitHub quanto no GitLab**. Você não precisa necessariamente criar uma chave diferente para cada plataforma.
 
 A ideia é:
 

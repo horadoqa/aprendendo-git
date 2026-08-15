@@ -251,14 +251,12 @@ flowchart TD
 
 ### Resumo
 
-```text
-git push
-    │
-    ├── Pega os commits locais
-    │
-    ├── ⬆Envia para o repositório remoto
-    │
-    └── Atualiza o GitHub
+```mermaid
+flowchart TD
+    A["git push"] --> B["Pega os commits locais"]
+    A --> C["⬆ Envia para o repositório remoto"]
+    A --> D["Atualiza o GitHub"]
 ```
+
 
 > **Resumo:** `git push` é o comando utilizado para **publicar no repositório remoto os commits que você criou localmente**. Ele normalmente vem depois de `git add` e `git commit`.

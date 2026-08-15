@@ -1,4 +1,4 @@
-# Guia de Git e GitHub/Gitlab
+# Guia de Git com GitHub ou Gitlab
 
 Bem-vindo ao repositório "Aprendendo Git e GitHub"! 
 
@@ -8,6 +8,7 @@ Este repositório é um recurso abrangente para entender e usar Git e GitHub, fe
 
 - [O que é Git?](#o-que-é-git)
 - [O que é GitHub?](#o-que-é-github)
+- [O que é Gitlab?](#o-que-é-gitlab)
 - [Instalação do Git](#instalação-do-git)
 - [Comandos Básicos do Git](#comandos-básicos-do-git)
 - [Usando o GitHub](#usando-o-github)

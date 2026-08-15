@@ -126,7 +126,7 @@ git status
 
 ### Resumo
 
-```text
+```mermaid
 flowchart TD
     A["git rm arquivo.txt"] --> B["Remove o arquivo do computador"]
     A --> C["Prepara a remoção no Staging"]

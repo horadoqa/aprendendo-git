@@ -6,7 +6,7 @@ No Git, **`merge` significa integrar as alterações de uma branch em outra**.
 
 Imagine que você tenha:
 
-```text
+```mermaid
 flowchart TD
     A["A"] --- B["B"]
     B --- C["C"] --- D["D"]
@@ -24,7 +24,7 @@ git merge index
 
 o Git vai **integrar os commits da `index` na `main`**.
 
-```text
+```mermaid
 flowchart LR
     A["A"] --- B["B"] --- C["C"] --- D["D"]
     D --- M["main"]

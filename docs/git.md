@@ -1,4 +1,4 @@
-# GIT
+# `git`
 
 O Git é um sistema de controle de versão distribuído amplamente utilizado para gerenciar e acompanhar alterações em projetos de software. Aqui estão algumas características e funcionalidades principais do Git:
 

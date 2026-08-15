@@ -1,36 +1,70 @@
-# GITHUB
+Se a ideia é **converter o texto para explicar o GitHub**, mantendo a mesma estrutura:
 
-site: https://github.com/
+# `github`
 
-O GitHub é uma plataforma de hospedagem de código-fonte que utiliza o sistema de controle de versão Git. É amplamente utilizada por desenvolvedores para gerenciar projetos de software e colaborar em equipe. Aqui estão algumas características e funcionalidades principais do GitHub:
+site: [https://github.com/](https://github.com/)
 
-## Características do GitHub
-Hospedagem de Repositórios: Permite que usuários armazenem seus repositórios Git na nuvem, facilitando o acesso e a colaboração.
+O **GitHub** é uma plataforma de hospedagem e colaboração para projetos de software.
 
-- Colaboração: Facilita o trabalho em equipe, permitindo que vários desenvolvedores contribuam para o mesmo projeto. Recursos como pull requests e revisões de código ajudam na colaboração eficiente.
+Ele utiliza o **Git** para controle de versão e oferece recursos como:
 
-- Controle de Versão: Usa Git para gerenciar alterações no código, permitindo que desenvolvedores acompanhem o histórico de mudanças, revertam alterações e criem branches para desenvolver novas funcionalidades.
+* Repositórios Git
+* Branches
+* Commits
+* Pull Requests
+* Revisão de código
+* Issues
+* GitHub Actions
+* Pipelines de automação
+* Controle de permissões
 
-- Integração Contínua/Entrega Contínua (CI/CD): Oferece ferramentas para automação de testes e deploy, permitindo que desenvolvedores automatizem partes do ciclo de vida do software.
+### GitHub
 
-- Documentação: Permite que projetos incluam documentação diretamente no repositório usando arquivos Markdown (README.md, por exemplo), facilitando o entendimento do projeto.
+```text
+flowchart TD
+    A["feature/login"] --> B["Pull Request"]
+    B --> C["main"]
+```
 
-- Issues e Projetos: Possui um sistema de rastreamento de issues (problemas) e projetos que ajuda na gestão de tarefas e bugs.
+O **Pull Request** permite solicitar a revisão e a integração das alterações de uma branch em outra.
 
-- GitHub Actions: Uma funcionalidade que permite automação de fluxos de trabalho, como a execução de scripts ou testes quando um evento ocorre (por exemplo, um push ou pull request).
+Os comandos Git continuam sendo:
 
-- Comunidade: O GitHub abriga uma grande comunidade de desenvolvedores, permitindo o compartilhamento de projetos de código aberto e a colaboração em larga escala.
+```bash
+git add .
+git commit -m "Adiciona login"
+git push
+```
 
-## Usos do GitHub
+O Git é a ferramenta de controle de versão; o **GitHub é uma plataforma que hospeda repositórios Git e adiciona recursos de colaboração, revisão de código e automação**.
 
-- Desenvolvimento de Software: É a principal plataforma para desenvolvimento colaborativo de software.
-- Projetos de Código Aberto: Muitos projetos de código aberto são hospedados no GitHub, permitindo que desenvolvedores de todo o mundo contribuam.
-- Aprendizado: Desenvolvedores podem explorar projetos existentes, contribuir para projetos de código aberto e melhorar suas habilidades de programação.
-Exemplos de Funcionalidades
-Fork: Permite criar uma cópia de um repositório para que você possa modificar livremente.
-- Pull Request: Um recurso para solicitar a revisão e a mesclagem de suas alterações no repositório original.
-Wiki: Permite criar uma documentação colaborativa sobre o projeto.
+### Principais recursos
 
-## Conclusão
+| Recurso           | GitHub              |
+| ----------------- | ------------------- |
+| Repositórios Git  | GitHub Repositories |
+| Branches          | Branches            |
+| Commits           | Commits             |
+| Pull Request      | Pull Request        |
+| GitHub Actions    | CI/CD e automação   |
+| Issues            | Issues              |
+| GitHub Projects   | Projects            |
+| GitHub Codespaces | Codespaces          |
 
-O GitHub é uma ferramenta poderosa e essencial para desenvolvedores e equipes de desenvolvimento. Ele não apenas facilita o gerenciamento de código, mas também promove a colaboração e a transparência em projetos de software. Se você tiver mais perguntas sobre o GitHub ou sobre como usá-lo, sinta-se à vontade para perguntar!
+Uma diferença importante na terminologia é que, no GitHub, utilizamos **Pull Request (PR)** para propor a integração das alterações:
+
+```text
+flowchart TD
+    A["feature/login"] --> B["Pull Request"]
+    B --> C["main"]
+```
+
+Apesar de o GitHub possuir seus próprios recursos, os comandos básicos do Git permanecem os mesmos.
+
+```bash
+git add .
+git commit -m "Adiciona login"
+git push
+```
+
+**Git e GitHub não são a mesma coisa:** o Git é o sistema de controle de versão, enquanto o GitHub é uma plataforma que hospeda repositórios Git e oferece ferramentas para colaboração e desenvolvimento de software.

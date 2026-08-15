@@ -1,4 +1,4 @@
-# Praticando Git e GitHub
+# `Praticando Git e GitHub`
 
 Aqui estão alguns conceitos e exemplos práticos para aprender a trabalhar com **Git e GitHub**, desde a criação e clonagem de um repositório até o uso de branches, commits, Pull Requests, merge e sincronização com o repositório remoto.
 
@@ -300,16 +300,12 @@ git switch -
 
 Exemplo:
 
-```text
-main
-  ↓
-git switch index
-  ↓
-index
-  ↓
-git switch -
-  ↓
-main
+```mermaid
+flowchart TD
+    A["main"] --> B["git switch index"]
+    B --> C["index"]
+    C --> D["git switch main"]
+    D --> E["main"]
 ```
 
 ---
